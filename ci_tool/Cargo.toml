@@ -1,0 +1,40 @@
+[package]
+name = "ci_tool"
+edition = "2021"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rustdoc-json = "0.8.9"
+rustup-toolchain = "0.1.6"
+rustdoc-types = "0.24.0"
+anyhow = "1.0"
+hashbag = { version = "0.1.11", default-features = false }
+thiserror = "1.0.44"
+clap = { version = "4.4", features = ["derive"] }
+glob = "0.3.1"
+regex = "1.10.3"
+askama = "0.12.1"
+
+[dependencies.serde]
+version = "1.0.179"
+features = ["derive"]
+
+[dependencies.serde_json]
+version = "1.0.104"
+features = ["unbounded_depth"]
+
+[dev-dependencies]
+assert_cmd = "2.0.13"
+expect-test = "1.4.1"
+pretty_assertions = "1.2.3"
+tempfile = "3.9.0"
+
+[dev-dependencies.itertools]
+version = "0.12.1"
+default-features = false
+
+[dev-dependencies.predicates]
+version = "3.1.0"
+default-features = false

@@ -1,0 +1,6 @@
+.DS_Store
+.venv
+.work
+/bot/config.yaml
+/ci_tool/target
+__pycache__
